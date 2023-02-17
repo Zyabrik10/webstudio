@@ -83,7 +83,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .container {
     padding: 0 15px;
     width: 1158px;
@@ -94,7 +94,7 @@ img {
   padding: 96px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .section {
     padding: 120px 0;
   }
@@ -568,7 +568,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .navigation {
     margin-right: auto;
     margin-left: 76px;
@@ -633,7 +633,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .contacts-info-list {
     display: flex;
     flex-direction: row;
@@ -654,7 +654,7 @@ img {
   transition-timing-function: var(--general-timimng-function);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .contact-info {
     padding: 24px 0;
   }
@@ -700,10 +700,10 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 
-  /* background-size: 1200px;*/
+  /* background-size: 1440px;*/
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .hero {
     padding: 188px 0;
   }
@@ -758,7 +758,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .hero {
     background: linear-gradient(
         to top,
@@ -767,7 +767,7 @@ img {
       ),
       url("../images/main_page/hero/hero_des@1x.jpg");
 
-    background-size: 1200px 600px;
+    background-size: 1440px 600px;
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -783,7 +783,7 @@ img {
         ),
         url("../images/main_page/hero/hero_des@2x.jpg");
 
-      background-size: 1200px 600px;
+      background-size: 1440px 600px;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -832,7 +832,7 @@ img {
 
 /* <BENEFITS SECTION> */
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .benefits {
     padding-bottom: 0;
   }
@@ -848,7 +848,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .benefits-icon {
     display: block;
   }
@@ -864,7 +864,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .benefits-list {
     --items: 4;
   }
@@ -892,7 +892,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .benefits-item-title {
     font-weight: 500;
     font-size: 20px;
@@ -918,7 +918,7 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .activity {
     display: block;
   }
@@ -957,7 +957,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .team .container {
     max-width: 1158px;
   }
@@ -975,7 +975,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .team-list {
     --items: 4;
   }
@@ -1103,7 +1103,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .customers-list {
     --items: 6;
     --items-gap: 24px;
@@ -1203,7 +1203,7 @@ img {
     row-gap: 72px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .solutions-list {
     --items: 3;
     row-gap: 48px;
@@ -1268,7 +1268,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .solution-img {
     max-width: 360px;
   }
@@ -1330,7 +1330,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .footer-content {
     gap: 0;
     flex-wrap: nowrap;
@@ -1363,7 +1363,7 @@ img {
   width: 264px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .footer-media {
     margin-left: 120px;
   }
@@ -1418,7 +1418,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1440px) {
   .footer-sub {
     margin-left: 80px;
   }
