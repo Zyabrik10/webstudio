@@ -20,7 +20,7 @@
     <!-- modal window -->
     <div class="modal-wrapper is-hidden" data-modal>
         <div class="modal-window">
-            <button class="close-button" data-modal-close>&times;</button>
+            <button class="close-button" type="button" data-modal-close>&times;</button>
             <p class="intro-text">
                 Leave your contacts and we will call you back
             </p>
@@ -81,6 +81,70 @@
         </div>
     </div>
 
+    <!-- modal navigation window -->
+    <div class="modal-navigation-window js-menu-container">
+        <button class="close-button js-close-menu" type="button">&times;</button>
+        <div class="modal-navigation-content">
+            <nav class="modal-navigation">
+                <ul class="modal-navigation-list list">
+                    <li class="modal-navigation-item">
+                        <a class="modal-navigation-link link" href="">Studio</a>
+                    </li>
+                    <li class="modal-navigation-item">
+                        <a class="modal-navigation-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="modal-navigation-item">
+                        <a class="modal-navigation-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="modal-contacts-info-list list">
+                <li class="modal-contacts-info-item">
+                    <a class="modal-contacts-info-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="modal-contacts-info-item">
+                    <a class="modal-contacts-info-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="modal-contacts-info-item">
+                    <ul class="modal-soc-media-list list">
+                        <li class="modal-soc-media-item">
+                            <a href="" class="modal-soc-media-link link">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use href="./images/members/icons/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-soc-media-item">
+                            <a href="" class="modal-soc-media-link link">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use href="./images/members/icons/symbol-defs.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-soc-media-item">
+                            <a href="" class="modal-soc-media-link link">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use href="./images/members/icons/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-soc-media-item">
+                            <a href="" class="modal-soc-media-link link">
+                                <svg width="24" height="24" viewBox="0 0 32 32" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <use href="./images/members/icons/symbol-defs.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <!-- <HEADER> -->
     <header class="header">
         <div class="container header-content">
@@ -112,6 +176,11 @@
                     </a>
                 </li>
             </ul>
+            <button class="mobile-menu-button button js-open-menu" type="button">
+                <svg width="32" height="22" viewBox="0 0 32 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use href="./images/header/icons/symbol-defs.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <!-- </HEADER> -->
@@ -194,13 +263,31 @@
                 <h2 class="activity-title">What are we doing</h2>
                 <ul class="activity-list list flex-container">
                     <li class="activity-item flex-container-item">
-                        <img src="images/main_page/activity/activity1.jpg" alt="first activity" width="360">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/activity/img_des@1x-2.jpg 1x, ./images/main_page/activity/img_des@2x-2.jpg 2x"
+                                media="(min-width: 1440px)" />
+                            <img loading="lazy" src="images/main_page/activity/activity1.jpg" alt="first activity"
+                                width="360" height="300">
+                        </picture>
                     </li>
                     <li class="activity-item flex-container-item">
-                        <img src="images/main_page/activity/activity2.jpg" alt="second activity" width="360">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/activity/img_des@1x-1.jpg 1x, ./images/main_page/activity/img_des@2x-1.jpg 2x"
+                                media="(min-width: 1440px)" />
+                            <img loading="lazy" src="images/main_page/activity/activity2.jpg" alt="first activity"
+                                width="360" height="300">
+                        </picture>
                     </li>
                     <li class="activity-item flex-container-item">
-                        <img src="images/main_page/activity/activity3.jpg" alt="third activity" width="360">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/activity/img_des@1x.jpg 1x, ./images/main_page/activity/img_des@2x.jpg 2x"
+                                media="(min-width: 1440px)" />
+                            <img loading="lazy" src="images/main_page/activity/activity3.jpg" alt="first activity"
+                                width="360" height="300">
+                        </picture>
                     </li>
                 </ul>
             </div>
@@ -211,12 +298,24 @@
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list flex-container">
                     <li class="member flex-container-item">
-                        <img class="member-img" src="images/main_page/member/member1.jpg" alt="first member"
-                            width="264">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/member/img_des@1x-3.jpg 1x, ./images/main_page/member/img_des@2x-3.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1440px)">
+                            <source
+                                srcset="./images/main_page/member/img_tab@1x-3.jpg 1x, ./images/main_page/member/img_tab@2x-3.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)">
+                            <source
+                                srcset="./images/main_page/member/img_mob@1x-3.jpg 1x, ./images/main_page/member/img_mob@2x-3.jpg 2x"
+                                type="image/jpeg" media="(max-width: 768px)">
+
+                            <img loading="lazy" class="member-img" src="images/main_page/member/member1.jp"
+                                alt="first member" width="264" height="260">
+                        </picture>
                         <div class="member-info">
                             <h3 class="member-name">Mark Guerrero</h3>
                             <p class="member-occupation">Product Designer</p>
-                            <ul class="member-soc-media list flex-container">
+                            <ul class="member-soc-media-list list flex-container">
                                 <li class="soc-media-item flex-container-item">
                                     <a href="" class="member-soc-media-link link">
                                         <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
@@ -253,12 +352,24 @@
                         </div>
                     </li>
                     <li class="member flex-container-item">
-                        <img class="member-img" src="images/main_page/member/member2.jpg" alt="third member"
-                            width="264">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/member/img_des@1x-2.jpg 1x, ./images/main_page/member/img_des@2x-2.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1440px)">
+                            <source
+                                srcset="./images/main_page/member/img_tab@1x-2.jpg 1x, ./images/main_page/member/img_tab@2x-2.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)">
+                            <source
+                                srcset="./images/main_page/member/img_mob@1x-2.jpg 1x, ./images/main_page/member/img_mob@2x-2.jpg 2x"
+                                type="image/jpeg" media="(max-width: 768px)">
+
+                            <img loading="lazy" class="member-img" src="images/main_page/member/member2.jp"
+                                alt="first member" width="264" height="260">
+                        </picture>
                         <div class="member-info">
                             <h3 class="member-name">Tom Ford</h3>
                             <p class="member-occupation">Frontend Developer</p>
-                            <ul class="member-soc-media list flex-container">
+                            <ul class="member-soc-media-list list flex-container">
                                 <li class="soc-media-item flex-container-item">
                                     <a href="" class="member-soc-media-link link">
                                         <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
@@ -295,12 +406,24 @@
                         </div>
                     </li>
                     <li class="member flex-container-item">
-                        <img class="member-img" src="images/main_page/member/member3.jpg" alt="second member"
-                            width="264">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/member/img_des@1x-1.jpg 1x, ./images/main_page/member/img_des@2x-1.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1440px)">
+                            <source
+                                srcset="./images/main_page/member/img_tab@1x-1.jpg 1x, ./images/main_page/member/img_tab@2x-1.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)">
+                            <source
+                                srcset="./images/main_page/member/img_mob@1x-1.jpg 1x, ./images/main_page/member/img_mob@2x-1.jpg 2x"
+                                type="image/jpeg" media="(max-width: 768px)">
+
+                            <img loading="lazy" class="member-img" src="images/main_page/member/member2.jp"
+                                alt="first member" width="264" height="260">
+                        </picture>
                         <div class="member-info">
                             <h3 class="member-name">Camila Garcia</h3>
                             <p class="member-occupation">Marketing</p>
-                            <ul class="member-soc-media list flex-container">
+                            <ul class="member-soc-media-list list flex-container">
                                 <li class="soc-media-item flex-container-item">
                                     <a href="" class="member-soc-media-link link">
                                         <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
@@ -337,12 +460,24 @@
                         </div>
                     </li>
                     <li class="member flex-container-item">
-                        <img class="member-img" src="images/main_page/member/member4.jpg" alt="fourth member"
-                            width="264">
+                        <picture>
+                            <source
+                                srcset="./images/main_page/member/img_des@1x.jpg 1x, ./images/main_page/member/img_des@2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1440px)">
+                            <source
+                                srcset="./images/main_page/member/img_tab@1x.jpg 1x, ./images/main_page/member/img_tab@2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)">
+                            <source
+                                srcset="./images/main_page/member/img_mob@1x.jpg 1x, ./images/main_page/member/img_mob@2x.jpg 2x"
+                                type="image/jpeg" media="(max-width: 768px)">
+
+                            <img loading="lazy" class="member-img" src="images/main_page/member/member2.jp"
+                                alt="first member" width="264" height="260">
+                        </picture>
                         <div class="member-info">
                             <h3 class="member-name">Daniel Wilson</h3>
                             <p class="member-occupation">UI Designer</p>
-                            <ul class="member-soc-media list flex-container">
+                            <ul class="member-soc-media-list list flex-container">
                                 <li class="soc-media-item flex-container-item">
                                     <a href="" class="member-soc-media-link link">
                                         <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
@@ -443,7 +578,7 @@
     <!-- <FOOTER> -->
     <footer class="footer">
         <div class="container footer-content">
-            <div class="logo-inspire flex-container-item">
+            <div class="logo-inspire footer-center">
                 <a class="footer-website-logo website-logo link" href="./index.html">
                     <span class="logo-web">web</span>studio
                 </a>
@@ -452,8 +587,8 @@
                     solutions.
                 </p>
             </div>
-            <div class="footer-media">
-                <p class="footer-media-title footer-title">Social media</p>
+            <div class="footer-media footer-center">
+                <p class=" footer-media-title footer-title">Social media</p>
                 <ul class="footer-media-list list flex-container">
                     <li class="footer-media-item flex-container-item">
                         <a class="footer-media-link link" href="">
@@ -493,7 +628,7 @@
                 <p class="footer-sub-title footer-title">Subscribe</p>
                 <form class="footer-form" name="subscribe-form" autocomplete="on">
                     <input class="footer-mail-input" type="mail" placeholder="E-mail" name="email_input" required>
-                    <button class="footer-form-submit button" type="submit">
+                    <button class="footer-form-submit button footer-center" type="submit">
                         Subscribe
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <use href="./images/footer/telegram-icon/symbol-defs.svg#icon-telegram"></use>
@@ -506,6 +641,7 @@
     <!-- </FOOTER> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
