@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- modal window -->
+    <div class="modal-wrapper is-hidden" data-modal>
+        <div class="modal-window">
+            <button class="close-button" data-modal-close>&times;</button>
+            <p class="intro-text">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="contacts-form" name="contacts_form" autocomplete="on">
+                <div class="form-box">
+                    <label class="form-label" for="name_input">Name</label>
+                    <div class="input-box">
+                        <input class="form-input input-margin-top" type="text" id="name_input" name="name_input"
+                            required>
+                        <svg class="input-icon" width="18" height="24" viewBox="0 0 18 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/modal_window/icons/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-box form-input-space">
+                    <label class="form-label" for="phone_input">Phone</label>
+                    <div class="input-box">
+                        <input class="form-input input-margin-top" type="text" id="phone_input" name="phone_input"
+                            required>
+                        <svg class="input-icon" width="18" height="24" viewBox="0 0 18 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/modal_window/icons/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-box form-input-space">
+                    <label class="form-label" for="email_input">Email</label>
+                    <div class="input-box">
+                        <input class="form-input input-margin-top" type="text" id="email_input" name="email_input"
+                            required>
+                        <svg class="input-icon" width="18" height="24" viewBox="0 0 18 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/modal_window/icons/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-box textarea-box form-input-space">
+                    <label class="form-label" for="comment_input">Comment</label>
+                    <textarea class="form-input form-textarea input-margin-top" id="comment_input" name="comment_input"
+                        placeholder="Text input" required></textarea>
+                </div>
+                <div class="form-box checkbox-box">
+                    <input class="hidden checkbox-input" type="checkbox" id="checkbox_input" name="checkbox_input"
+                        required>
+                    <label class="form-label form-check-label" for="checkbox_input">
+                        <span class="modal-form-checkbox">
+                            <svg class="tip-icon" width="10" height="8" viewBox="0 0 10 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/modal_window/tip_icon/symbol-defs.svg#icon-tip"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="price-policy-link" href="">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="form-button button" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- <HEADER> -->
+    <header class="header">
+        <div class="container header-content">
+            <a class="website-logo link" href="./index.html">
+                <span class="logo-web">web</span>studio
+            </a>
+            <nav class="navigation">
+                <ul class="navigation-list list">
+                    <li class="navigation-item">
+                        <a class="navigation-link link current" href="./index.html">Studio</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a class="navigation-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contacts-info-list list">
+                <li class="contacts-info-item">
+                    <a class="mail contact-info link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts-info-item">
+                    <a class="phone contact-info link" href="tel:+110001111111">
+                        +11 (000) 111-11-11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- </HEADER> -->
+
+    <!-- <MAIN> -->
+    <main>
+        <!-- <HERO> -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Effective Solutions<br>for Your Business</h1>
+                <button class="hero-button button" type="button" data-modal-open>Order Service</button>
+            </div>
+        </section>
+        <!-- <HERO> -->
+
+        <section class="benefits section">
+            <div class="container">
+                <h2 class="hidden">Benefits</h2>
+                <ul class="benefits-list list flex-container">
+                    <li class="benefits-item flex-container-item">
+                        <div class="benefits-icon">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/benefits/icons/symbol-defs.svg#icon-antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-item-title">Strategy</h3>
+                        <p class="benefits-item-text">
+                            Our goal is to identify the business
+                            problem to walk away with the perfect and creative solution.
+                        </p>
+                    </li>
+                    <li class="benefits-item flex-container-item">
+                        <div class="benefits-icon">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/benefits/icons/symbol-defs.svg#icon-clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-item-title">Punctuality</h3>
+                        <p class="benefits-item-text">
+                            Bring the key message to the brand's audience for the best price within the shortest
+                            possible
+                            time.
+                        </p>
+                    </li>
+                    <li class="benefits-item flex-container-item">
+                        <div class="benefits-icon">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/benefits/icons/symbol-defs.svg#icon-diagram"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-item-title">Diligence</h3>
+                        <p class="benefits-item-text">
+                            Research and confirm brands that present the strongest digital growth opportunities and
+                            minimize
+                            risk.
+                        </p>
+                    </li>
+                    <li class="benefits-item flex-container-item">
+                        <div class="benefits-icon">
+                            <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <use href="./images/benefits/icons/symbol-defs.svg#icon-astronaut"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits-item-title">Technologies</h3>
+                        <p class="benefits-item-text">
+                            Design practice focused on digital experiences. We bring forth a deep passion for
+                            problem-solving.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="activity section">
+            <div class="container">
+                <h2 class="activity-title">What are we doing</h2>
+                <ul class="activity-list list flex-container">
+                    <li class="activity-item flex-container-item">
+                        <img src="images/main_page/activity/activity1.jpg" alt="first activity" width="360">
+                    </li>
+                    <li class="activity-item flex-container-item">
+                        <img src="images/main_page/activity/activity2.jpg" alt="second activity" width="360">
+                    </li>
+                    <li class="activity-item flex-container-item">
+                        <img src="images/main_page/activity/activity3.jpg" alt="third activity" width="360">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="team section">
+            <div class="container">
+                <h2 class="team-title">Our Team</h2>
+                <ul class="team-list list flex-container">
+                    <li class="member flex-container-item">
+                        <img class="member-img" src="images/main_page/member/member1.jpg" alt="first member"
+                            width="264">
+                        <div class="member-info">
+                            <h3 class="member-name">Mark Guerrero</h3>
+                            <p class="member-occupation">Product Designer</p>
+                            <ul class="member-soc-media list flex-container">
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="member flex-container-item">
+                        <img class="member-img" src="images/main_page/member/member2.jpg" alt="third member"
+                            width="264">
+                        <div class="member-info">
+                            <h3 class="member-name">Tom Ford</h3>
+                            <p class="member-occupation">Frontend Developer</p>
+                            <ul class="member-soc-media list flex-container">
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="member flex-container-item">
+                        <img class="member-img" src="images/main_page/member/member3.jpg" alt="second member"
+                            width="264">
+                        <div class="member-info">
+                            <h3 class="member-name">Camila Garcia</h3>
+                            <p class="member-occupation">Marketing</p>
+                            <ul class="member-soc-media list flex-container">
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="member flex-container-item">
+                        <img class="member-img" src="images/main_page/member/member4.jpg" alt="fourth member"
+                            width="264">
+                        <div class="member-info">
+                            <h3 class="member-name">Daniel Wilson</h3>
+                            <p class="member-occupation">UI Designer</p>
+                            <ul class="member-soc-media list flex-container">
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="soc-media-item flex-container-item">
+                                    <a href="" class="member-soc-media-link link">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <use href="./images/members/icons/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="customers section">
+            <div class="container">
+                <h2 class="customers-title">Customers</h2>
+                <ul class="customers-list list flex-container">
+                    <li class="customers-client flex-container-item">
+                        <a href="#" class="customers-client-link link">
+                            <svg width="104" height="58" viewBox="0 0 59 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use href="./images/customers/icons/symbol-defs.svg#icon-logo"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-client flex-container-item">
+                        <a href="#" class="customers-client-link link">
+                            <svg width="104" height="58" viewBox="0 0 59 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use href="./images/customers/icons/symbol-defs.svg#icon-logo-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-client flex-container-item">
+                        <a href="#" class="customers-client-link link">
+                            <svg width="104" height="58" viewBox="0 0 59 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use href="./images/customers/icons/symbol-defs.svg#icon-logo-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-client flex-container-item">
+                        <a href="#" class="customers-client-link link">
+                            <svg width="104" height="58" viewBox="0 0 59 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use href="./images/customers/icons/symbol-defs.svg#icon-logo-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-client flex-container-item">
+                        <a href="#" class="customers-client-link link">
+                            <svg width="104" height="58" viewBox="0 0 59 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use href="./images/customers/icons/symbol-defs.svg#icon-logo-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="customers-client flex-container-item">
+                        <a href="#" class="customers-client-link link">
+                            <svg width="104" height="58" viewBox="0 0 59 32" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <use href="./images/customers/icons/symbol-defs.svg#icon-logo-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- </MAIN> -->
+
+    <!-- <FOOTER> -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo-inspire flex-container-item">
+                <a class="footer-website-logo website-logo link" href="./index.html">
+                    <span class="logo-web">web</span>studio
+                </a>
+                <p class="inspire-text">
+                    Increase the flow of customers and sales for your business with digital marketing & growth
+                    solutions.
+                </p>
+            </div>
+            <div class="footer-media">
+                <p class="footer-media-title footer-title">Social media</p>
+                <ul class="footer-media-list list flex-container">
+                    <li class="footer-media-item flex-container-item">
+                        <a class="footer-media-link link" href="">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" width="24" height="24">
+                                <use href="./images/footer/icons/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-media-item flex-container-item">
+                        <a class="footer-media-link link" href="">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" width="24" height="24">
+                                <use href="./images/footer/icons/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-media-item flex-container-item">
+                        <a class="footer-media-link link" href="">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" width="24" height="24">
+                                <use href="./images/footer/icons/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-media-item flex-container-item">
+                        <a class="footer-media-link link" href="">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" width="24" height="24">
+                                <use href="./images/footer/icons/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-sub">
+                <p class="footer-sub-title footer-title">Subscribe</p>
+                <form class="footer-form" name="subscribe-form" autocomplete="on">
+                    <input class="footer-mail-input" type="mail" placeholder="E-mail" name="email_input" required>
+                    <button class="footer-form-submit button" type="submit">
+                        Subscribe
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/footer/telegram-icon/symbol-defs.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- </FOOTER> -->
+
+    <script src="./js/modal.js"></script>
+</body>
+
+</html>
